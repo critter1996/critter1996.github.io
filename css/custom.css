@@ -7,15 +7,21 @@ body {
     background-color: #f8c0f3;
 }
 
-/* .navbar {
-    margin-right: auto;
-} */
+#projects-cards {
+    padding: 20px;
+    margin-left: 25px;
+    max-height: 50px;
+}
+
+/* .card {} */
 
 .navbar a {
    color : black;
    
 }
 
-/* .navbar nav {
-    text-align: right;
-} */
+.card-img-top {
+    padding-bottom: 10px;
+    /* max-height: 50px; */
+    margin-bottom: 10px;
+}

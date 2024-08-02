@@ -5,6 +5,7 @@
 .jumbotron {
     background-image: url('../img/WHI_flowers.png');
     background-size: cover;
+    /* width: 105vw; */
 }
 
 body {
@@ -16,15 +17,21 @@ body {
     min-height: 100vh;
     display: flex; */
     align-items: flex-end;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 #projects-cards {
     padding: 20px;
-    margin-left: 25px;
+    /* margin-left: 15px; */
+    margin-right: 10px;
     max-height: 50px;
 }
 
-/* .card {} */
+.card {
+    padding: 10px;
+    max-width: 500px;
+}
 
 .navbar a {
    color : black;
@@ -46,6 +53,10 @@ body {
     width: 23%;
 }
 
+.img-fluid {
+    max-width: 82%;
+    height: auto;
+}
 
 /* testing */
 *{

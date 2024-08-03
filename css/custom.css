@@ -123,4 +123,32 @@ footer{
     justify-content: center;
 }
 
-  
+/*Tablet Size*/
+@media (min-width: 768px) {
+    .img-fluid {
+        max-width: 75%;
+        height: auto;
+    }
+
+    body {
+        overflow: scroll;
+    }
+}
+
+/* Laptop Size */
+@media (min-width: 1024px) {
+    .img-fluid {
+        max-width: 85%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+
+/* //Need to fix picture in laptop size as well as overflow - not mobile first 
+//add email
+//Fix Navigatin in tablet mode */

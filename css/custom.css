@@ -2,6 +2,17 @@
     box-sizing: border-box;
 } */
 
+
+/* TEST CSS HAMBURGER */
+
+.navbar {
+    background-color: #f8c0f3;
+}
+
+
+
+/* END TEST CSS HAMBURGER */
+
 .jumbotron {
     background-image: url('../img/WHI_flowers.png');
     background-size: cover;
@@ -50,8 +61,12 @@ body {
 
 #about-section, 
 #skills-section {
-    margin-top: 30px;
+    margin-top: 60px;
 }
+
+/* #about-section {
+    margin-bottom: 120px;
+} */
 
 .github {
     width: 23%;
@@ -91,6 +106,7 @@ footer{
     line-height: 28px;
     font-size: 14px;
 }
+
 /*social -media*/
 .socials{
     list-style: none;
@@ -126,6 +142,9 @@ footer{
 
 /*Tablet Size*/
 @media (min-width: 768px) {
+
+
+
     .img-fluid {
         max-width: 75%;
         height: auto;

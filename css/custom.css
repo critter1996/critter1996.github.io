@@ -9,7 +9,13 @@
     background-color: #f8c0f3;
 }
 
+h3 a {
+    color: #fff;
+}
 
+h3 a:hover {
+    color: #f8c0f3;
+}
 
 /* END TEST CSS HAMBURGER */
 

@@ -67,12 +67,18 @@ body {
 
 #about-section, 
 #skills-section {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
-/* #about-section {
-    margin-bottom: 120px;
-} */
+
+#button-link {
+    text-decoration: none;
+    
+}
+
+#link-btn {
+    margin-top: 50px;
+}
 
 .github {
     width: 23%;

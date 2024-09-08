@@ -17,6 +17,10 @@ h3 a:hover {
     color: #f8c0f3;
 }
 
+#md-nav {
+    display: none;
+}
+
 /* END TEST CSS HAMBURGER */
 
 .jumbotron {
@@ -84,10 +88,38 @@ body {
     width: 23%;
 }
 
-.img-fluid {
+/* .img-fluid {
     max-width: 80%;
-    height: auto;
+    height: auto; */
     /* border-radius: 50%; */
+/* } */
+
+/* #prof-pic {
+    max-width: 175px;
+    border-radius: 50%;
+    align-self: center;
+    height: 200px;
+    width: auto;
+} */
+
+
+.custom-btn {
+    background-color: #f8c0f3;
+}
+
+.btn-outline-dark {
+    /* color: #007bff;
+    background-color: transparent; */
+    color: black;
+    background-color: #f8c0f3;
+    background-image: none;
+    border-color: #343a40;
+}
+
+.btn-outline-dark:hover {
+    background-color: black;
+    color: #f8c0f3;
+    cursor: pointer;
 }
 
 /* testing */
@@ -155,7 +187,19 @@ footer{
 /*Tablet Size*/
 @media (min-width: 768px) {
 
+    #small-nav {
+        display: none;
+    }
 
+    #md-nav {
+        display: block;
+    }
+
+    /* #prof-pic {
+        max-width: 175px;
+        border-radius: 50%;
+        align-self: center;
+    } */
 
     .img-fluid {
         max-width: 75%;

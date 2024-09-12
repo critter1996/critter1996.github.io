@@ -193,6 +193,11 @@ footer{
 
     #md-nav {
         display: block;
+        text-align: left;
+    }
+
+    .navbar>.container {
+        margin-right: 200px;
     }
 
     /* #prof-pic {

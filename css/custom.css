@@ -1,9 +1,17 @@
-/* * {
+/* //Need to fix picture in laptop size as well as overflow - not mobile first 
+//add email
+fix navbar on portfolio page
+//Fix Navigatin in tablet mode */
+
+
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-} */
+}
 
 
-/* TEST CSS HAMBURGER */
+/* HAMBURGER Menu */
 
 .navbar {
     background-color: #f8c0f3;
@@ -21,7 +29,54 @@ h3 a:hover {
     display: none;
 }
 
-/* END TEST CSS HAMBURGER */
+/* /HAMBURGER Menu */
+
+/* IMG Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* .slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white; 
+    border: none;
+    cursor: pointer;
+} */
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Animation  */
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+/* /IMG Slider */
 
 .jumbotron {
     background-image: url('../img/WHI_flowers.png');
@@ -31,20 +86,14 @@ h3 a:hover {
 
 body {
     background-color: #f8c0f3;
-
-    /* test */
-    /* padding: 0;
-    margin: 0;
-    min-height: 100vh;
-    display: flex; */
     align-items: flex-end;
     width: 100vw;
     overflow-x: hidden;
 }
 
+
 #projects-cards {
     padding: 20px;
-    /* margin-left: 15px; */
     margin-right: 10px;
     max-height: 50px;
 }
@@ -61,7 +110,6 @@ body {
 
 .card-img-top {
     padding-bottom: 10px;
-    /* max-height: 50px; */
     margin-bottom: 10px;
 }
 
@@ -88,28 +136,12 @@ body {
     width: 23%;
 }
 
-/* .img-fluid {
-    max-width: 80%;
-    height: auto; */
-    /* border-radius: 50%; */
-/* } */
-
-/* #prof-pic {
-    max-width: 175px;
-    border-radius: 50%;
-    align-self: center;
-    height: 200px;
-    width: auto;
-} */
-
 
 .custom-btn {
     background-color: #f8c0f3;
 }
 
 .btn-outline-dark {
-    /* color: #007bff;
-    background-color: transparent; */
     color: black;
     background-color: #f8c0f3;
     background-image: none;
@@ -122,17 +154,8 @@ body {
     cursor: pointer;
 }
 
-/* testing */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* color: #cfd2d6; */
-}
+
 footer{
-	/* position: absolute; */
-	/* bottom: 0; */
-	/* background: black; */
 	height: auto;
 	width: 100vw;
 	padding: 20px 0 0 0;
@@ -157,7 +180,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 1rem 0 3rem 0; */
 }
 .socials li{
     margin: 0 10px;
@@ -165,17 +187,13 @@ footer{
 .socials a{
     text-decoration: none;
     color: #fff;
-    /* border: 1.1px solid white; */
     padding: 5px;
     border-radius: 50%;
 }
 
 /* copyright*/
 .footer-copyright{
-    /* background: #000; */
     width: 100vw;
-    /* padding: 20px 20px 50px 20px; */
-    /* color: #cfd2d6; */
 }
 .footer-copyright p{
     font-size: 14px;
@@ -199,12 +217,6 @@ footer{
     .navbar>.container {
         margin-right: 200px;
     }
-
-    /* #prof-pic {
-        max-width: 175px;
-        border-radius: 50%;
-        align-self: center;
-    } */
 
     .img-fluid {
         max-width: 75%;
@@ -230,7 +242,3 @@ footer{
 
 
 
-/* //Need to fix picture in laptop size as well as overflow - not mobile first 
-//add email
-fix navbar on portfolio page
-//Fix Navigatin in tablet mode */

@@ -1,11 +1,7 @@
 ///////////////////////////To-Do List/////////////////////////////////
 // 1. Ability to push new project
 // 2. Search Function
-// 3. Gallery widget carusel
-
-//4. Create Grid Design?
-//5. Circle photo?
-//<!-- Add Scroll to top to both pages -->
+// Circle photo?
 
 
 
@@ -20,6 +16,8 @@
 const slides = document.querySelectorAll('.slides img');
 let slideIndex = 0;
 let intervalId = null;
+const btnNext = document.getElementById('next');
+const btnPrev = document.getElementById('prev');
 
 
 initializeSlider();
@@ -47,25 +45,31 @@ function showSlide(index) {
   slides[slideIndex].classList.add('displaySlide');
 }
 
-function prevSlide() {
+// function prevSlide() {
+//   slideIndex--;
+//   showSlide(slideIndex);
+// }
+
+// function nextSlide() {
+//   slideIndex++;
+//   showSlide(slideIndex)
+// }
+
+
+//Next Slide Button
+btnNext.addEventListener("click", () => {
+  slideIndex++;
+  showSlide(slideIndex);
+});
+
+//Prev Slide Button
+btnPrev.addEventListener("click", () => {
   slideIndex--;
   showSlide(slideIndex);
-}
-
-function nextSlide() {
-  slideIndex++;
-  showSlide(slideIndex)
-}
-
-
-// //Next Slide Button
-// addEventListener() {
-
-// }
-
-// //Prev Slide Button
-// addEventListener() {
-
-// }
+});
         
+
+
+
+//END
     })

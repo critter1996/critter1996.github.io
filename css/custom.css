@@ -37,6 +37,7 @@ h3 a:hover {
     width: 100%;
     margin: auto;
     overflow: hidden;
+    padding-top: 20px;
 }
 
 .slider img {
@@ -50,7 +51,7 @@ img.displaySlide {
     animation-duration: 1.5s;
 }
 
-/* .slider button {
+.slider button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -60,7 +61,7 @@ img.displaySlide {
     color: white; 
     border: none;
     cursor: pointer;
-} */
+}
 
 .prev {
     left: 0;

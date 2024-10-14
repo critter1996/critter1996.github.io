@@ -45,15 +45,15 @@ function showSlide(index) {
   slides[slideIndex].classList.add('displaySlide');
 }
 
-// function prevSlide() {
-//   slideIndex--;
-//   showSlide(slideIndex);
-// }
+function prevSlide() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
 
-// function nextSlide() {
-//   slideIndex++;
-//   showSlide(slideIndex)
-// }
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex)
+}
 
 
 //Next Slide Button

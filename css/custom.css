@@ -10,7 +10,6 @@ fix navbar on portfolio page
     box-sizing: border-box;
 }
 
-
 /* HAMBURGER Menu */
 
 .navbar {
@@ -79,6 +78,48 @@ img.displaySlide {
 
 /* /IMG Slider */
 
+/* Lightbox */
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /Lightbox */
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    padding: 15px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text-container {
+    padding-top: 15px;
+}
+
+.project-name {
+    font-size: 1.5rem;
+}
+
+
+/* /Grid */
+
 .jumbotron {
     background-image: url('../img/WHI_flowers.png');
     background-size: cover;
@@ -92,6 +133,10 @@ body {
     overflow-x: hidden;
 }
 
+.row {
+    justify-content: center;
+    /* margin-left: 70px; */
+}
 
 #projects-cards {
     padding: 20px;
@@ -227,6 +272,20 @@ footer{
     body {
         overflow: scroll;
     }
+
+    /* .row {
+        justify-content: center;
+        margin-left: 70px;
+    } */
+
+
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10px;
+        max-width: 730px;
+    }
+
 }
 
 /* Laptop Size */
@@ -236,6 +295,14 @@ footer{
     }
     body {
         overflow-x: hidden;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
     }
 }
 

@@ -10,6 +10,14 @@ fix navbar on portfolio page
     box-sizing: border-box;
 }
 
+/* .prof-pic {
+    width: 23%; 
+    height: auto;
+    padding: 10px;
+    margin: 18px;
+    border-radius: 50%;
+} */
+
 /* HAMBURGER Menu */
 
 .navbar {
@@ -94,6 +102,23 @@ img.displaySlide {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.project-img {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 /* /Lightbox */

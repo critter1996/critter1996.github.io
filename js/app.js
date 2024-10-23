@@ -11,7 +11,7 @@
 
 
 
-// IMAGE SLIDER
+////////////////////////////////// IMAGE SLIDER//////////////////////////////////////////////
 
 const slides = document.querySelectorAll('.slides img');
 let slideIndex = 0;
@@ -68,8 +68,13 @@ btnPrev.addEventListener("click", () => {
   showSlide(slideIndex);
 });
         
+/////////////////////////////////////////END OF IMAGE SLIDER/////////////////////////////////////////////////////////
 
 
 
-//END
+
+
+
+
+//END OF JS FILE
     })

@@ -2,9 +2,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 ////////////////////////////////////////MODAL GALLERY//////////////////////////////////////////////////////////////
-// const lightbox = document.createElement('div')
-// lightbox.id = 'lightbox'
-// document.body.appendChild(lightbox)
 
 const lightbox = document.getElementById('lightbox');
 const images = document.querySelectorAll('.project-img');
@@ -28,37 +25,57 @@ lightbox.addEventListener('click', e => {
 
 
 //////////////////////////////////////////Prev/Next////////////////////////////////////////////////////////////////////
-let arrowBack = document.getElementById('arrow_back');
-let arrowNext = document.getElementById('arrow_next');
+let lightboxPrev = document.getElementById('lightboxPrev');
+let lightboxNext = document.getElementById('lightboxNext');
+let imageIndex = 0;
+
+// for (let i = 0, i < images.length, i++)
+
+// if (index >= images.length) {
+//   imageIndex = 0;
+// } else if (index < 0) {
+//   imageIndex = images.length - 1;
+// }
+
+// lightboxPrev.addEventListener('click', {
+//   imageIndex++;
+// })
 
 
 
-//////Hides the arrow back at the begining////
 
-hideArrows();
-function hideArrows() {
+/////////////
 
-  if(images(index) === 0){
-    arrowBack.classList.add('hidden');
-    arrowBack.disabled = false;
-  }
 
-}
-///////Moves to the next slide///////////
-    arrowNext.addEventListener('click', e => {
-        displayModal(parseInt(index)+1);
-    });
-/////Moves to the previous slide/////////
-    arrowBack.addEventListener('click', e => {
-        displayModal(parseInt(index)-1);
-    });
-/////Hides the arrow forward/////////
-    if (parseInt(index) === 11) {
-        arrowNext.classList.add('hidden');
-        arrowNext.disabled = true;
-    }
+// function prevImage() {
+//   sliderImage(-1);
+// }
 
+// function nextImage() {
+//   sliderImage(1);
+// }
+
+// lightboxPrev.addEventListener('click', prevImage);
+// lightboxNext.addEventListener('click', nextImage);
+
+
+
+// //Next Slide Button
+// btnNext.addEventListener("click", () => {
+//   slideIndex++;
+//   showSlide(slideIndex);
+// });
+
+// //Prev Slide Button
+// btnPrev.addEventListener("click", () => {
+//   slideIndex--;
+//   showSlide(slideIndex);
+// });
 ////////////////////////////////////////END MODAL GALLERY//////////////////////////////////////////////////////////////
 
 //END OF JS FILE
 })
+
+
+
+

@@ -117,8 +117,19 @@ img.displaySlide {
     cursor: pointer;
 }
 
-.hidden {
-    display: none;
+.lightbox-prev, .lightbox-next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 9px;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox-prev {
+    left: 0;
+}
+.lightbox-next {
+    right: 0;
 }
 
 /* /Lightbox */

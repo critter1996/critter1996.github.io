@@ -24,53 +24,6 @@ lightbox.addEventListener('click', e => {
 })
 
 
-//////////////////////////////////////////Prev/Next////////////////////////////////////////////////////////////////////
-let lightboxPrev = document.getElementById('lightboxPrev');
-let lightboxNext = document.getElementById('lightboxNext');
-let imageIndex = 0;
-
-// for (let i = 0, i < images.length, i++)
-
-// if (index >= images.length) {
-//   imageIndex = 0;
-// } else if (index < 0) {
-//   imageIndex = images.length - 1;
-// }
-
-// lightboxPrev.addEventListener('click', {
-//   imageIndex++;
-// })
-
-
-
-
-/////////////
-
-
-// function prevImage() {
-//   sliderImage(-1);
-// }
-
-// function nextImage() {
-//   sliderImage(1);
-// }
-
-// lightboxPrev.addEventListener('click', prevImage);
-// lightboxNext.addEventListener('click', nextImage);
-
-
-
-// //Next Slide Button
-// btnNext.addEventListener("click", () => {
-//   slideIndex++;
-//   showSlide(slideIndex);
-// });
-
-// //Prev Slide Button
-// btnPrev.addEventListener("click", () => {
-//   slideIndex--;
-//   showSlide(slideIndex);
-// });
 ////////////////////////////////////////END MODAL GALLERY//////////////////////////////////////////////////////////////
 
 //END OF JS FILE

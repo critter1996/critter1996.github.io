@@ -167,16 +167,6 @@ body {
     margin-top: 30px;
 }
 
-
-#button-link {
-    text-decoration: none;
-    
-}
-
-#link-btn {
-    margin-top: 50px;
-}
-
 .github {
     width: 23%;
 }
@@ -297,6 +287,10 @@ footer{
         margin-left: auto;
         margin-right: auto;
         padding-left: 0;
+    }
+
+    .slider {
+        margin-top: 10%;
     }
 }
 
